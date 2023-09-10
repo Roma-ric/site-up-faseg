@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title> Une nouvelle page html </title>
+        <meta charset="utf-8">
+    <link rel="stylesheet" href="Une%20nouvelle%20page%20html_files/ROM2-CSS.txt">
+
+    </head> 
+
+    <body>
+        <p> <strong> FORMULAIRE</strong> </p>
+        <form method="post" action="traitement.php">
+            
+<fieldset id="section1">
+    <legend> Information hot</legend>
+Homme ou Femme ? <br>
+<br>
+<input type="radio" id="homme" name="sexe" value="homme" checked="checked">
+<label for="homme"> Homme</label><br>
+<input type="radio" id=" femme" name="sexe" value="femme">
+<label for="femme"> Femme</label><br>
+<br>
+</fieldset>
+
+<fieldset id="section2">
+    <legend> Informations supplémentaires</legend>
+Où habitez vous ? <br>
+<br>
+<select name="pays">
+    <optgroup label="Europe">
+       <option value="france" selected="selected"> France</option>
+       <option value="Belgique"> Belgique</option>
+    </optgroup>
+    <optgroup label="Amérique">
+       <option value="Canada"> Canada</option>
+       <option value="Brésil"> Brésil</option>
+    </optgroup>
+    <optgroup label="Afrique">
+       <option value="Maroc"> Maroc</option>
+       <option value="Tunisie"> Tunisie</option>
+       <option value="Algerie"> Algérie</option>
+       <option value="Togo"> Togo</option>
+    </optgroup>
+</select><br>
+<br>
+ 
+Quel est matiére préférée ?<br>
+<br>
+<select name="matiére">
+    <option value="SVT"> SVT</option>
+    <option value="PCT"> PCT</option>
+    <option value="MATHS" selected="selected"> MATHS</option>
+    <option value="Anglais"> Anglais</option>
+    <option value="Philisophie"> Philosophie</option>
+    <option value="Français"> Français</option>
+    <option value="HIST-GEO"> HIST-GEO</option>
+    <option value="EPS">EPS</option>
+</select><br>
+<br>
+
+Mineur ou Majeur ?<br>
+<br>   
+<input type="radio" id="mineur" name="Niveau" value="mineur">
+<label for="mineur"> Mineur </label><br>
+<input type="radio" id="majeur" name="NIveau" value="majeur" -----checked="checked"----->     ///////////////////////////////////
+<label for="majeur"> Majeur</label><br>
+<br>
+
+Quel(s) sport(s) pratiquez vous ?<br>                                                                          JS
+<br>
+<input type="checkbox" name="sport" value="natation" id="natation" ----checked="checked"----> ///////////////////////////////////
+<label for="natation"> Natation </label><br>                                                                   JS
+<input type="checkbox" name="sport" value="Course" id="course" ----checked="checked"---->     ///////////////////////////////////
+<label for="course"> Course à pied </label><br>
+<input type="checkbox" name="sport" value="Saut" id="Saut">
+<label for="Saut"> Saut en hauteur </label><br>
+<br>
+</fieldset>
+
+
+<fieldset id="section3">
+    <legend> Informations personnelles</legend>
+<div> 
+<br>
+               <label for="prenom" class="okay"> Entrez votrre prénom</label> 
+               <input type="text" id="prenom" name="prenom" -----required=""----><br>  /////////////////////////////////////////////////////////////
+<br>
+               <label for="Nom" class="okaye"> Entrez votre nom</label>                                                JS
+               <input type="text" id="Nom" name="Nom" -----required=""----><br>        /////////////////////////////////////////////////////////////
+<br>
+               <label class="okayg" for="moyenne"> Entrez votre moyenne annuelle  </label>                                       JS
+               <input type="number" min="10" max="18" id="moyenne" name="moyenne" -----required=""-----><br> /////////////////////////////////////////////////////////////
+<br>
+               <label for="pseudo" class="okayf"> Entrez votre pseudo </label>                                                   JS
+               <input type="text" id="pseudo" name="pseudo" -----required=""-----><br>                       /////////////////////////////////////////////////////////////
+<br>
+               <label class="oka" for="pass"> Entrez votre mot de passe </label>                                                 JS
+               <input type="password" id="pass" name="pass" -----required=""-----><br>                       /////////////////////////////////////////////////////////////
+<br>
+               <label class="okayb" for="email"> Entrez votre adresse email </label>                                                         JS
+               <input id="email" name="mail" type="email" -----required=""----- placeholder="Ex: nomprenom@gmail.com"><br> /////////////////////////////////////////////////////////////
+<br> 
+               <label class="okayc" for="site"> Entrez l'adresse de votre site web</label>                       JS
+               <input id="site" name="site" type="url" -----required=""-----><br>  /////////////////////////////////////////////////////////////
+<br>
+               <label class="okaya" for="dat"> Entrez votre date de naissance</label>                            JS
+               <input type="date" id="dat" name="dat" -----required=""-----><br>   /////////////////////////////////////////////////////////////
+<br>
+               <label class="okayd" for="tel"> Entrez votre numéro</label>                                       JS
+               <input id="tel" name="tel" type="number" -----required=""-----><br> /////////////////////////////////////////////////////////////
+               <br>
+</div> <br>
+</fieldset>
+
+ <div class="envoie">
+            <input class="envoyer" type="submit" value="Envoyer"><br> 
+</div>
+        </form>
+    
+</body></html>

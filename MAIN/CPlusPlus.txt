@@ -1,0 +1,35 @@
+int n;
+    int A[n*n], B[n*n], C[n*n];
+
+    cout<<"Donner l'ordre des matrices: ";
+    cin>>n;
+
+    cout<<" Entrer les valeurs de la matrice A. "<<endl;
+    for(int i=0; i<n*n;i++){
+        cin>>A[i];
+    }
+
+    cout<<" Entrer les valeurs de la matrice B. "<<endl;
+    for(int i=0; i<n*n;i++){
+        cin>>B[i];
+    }
+
+    for(int i=0, j=0, k=0, l=n; i<n*n;i++){
+        for (int i=0, j=0/*, k=0, l=n*/;i<n;i++){
+            C[i]= A[j]*B[k] + A[j+1]*B[l];
+            k+=1;
+            l+=1;
+        }
+        j+=n;
+    }
+
+    for(int i=0;i<n*n; i++){
+        cout<<C[i]<<" ";
+        if(i>=n || i>=n+n){
+            continue;
+            cout<<C[i]<<" ";
+        }
+        if(i == n){
+            i += n;
+        }
+    }
